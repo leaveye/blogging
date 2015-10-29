@@ -91,6 +91,11 @@ SOCIAL = (('Lex Chow的博客', 'https://chou.it'),
 
 DEFAULT_PAGINATION = 20
 
+# Disqus
+
+DISQUS_SITENAME = 'blog-levi-g-info'
+
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 #!/usr/bin/env python
