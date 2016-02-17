@@ -1,6 +1,6 @@
 Title: 见证者游戏谜题解析
 Date: 2016-02-17 14:34
-Edited: 2016-02-17 16:11
+modified: 2016-02-17 16:52
 Tags: game, puzzle, math
 Category: blogging
 Slug: the-witness-puzzles
@@ -43,5 +43,5 @@ Author: Levi G
 
 # 其它资源
 
-* [IGN Wiki 上关于谜题类型的介绍](http://www.ign.com/wikis/the-witness/Puzzle_Types)
-* [优酷上混沌王的实况视频](http://v.youku.com/v_show/id_XMTQ1ODMzNzc0NA==.html?f=26612444)
+* [IGN 见证者 Wiki](http://www.ign.com/wikis/the-witness) 上，[关于谜题类型的介绍](http://www.ign.com/wikis/the-witness/Puzzle_Types)
+* 优酷上，[混沌王的实况视频](http://v.youku.com/v_show/id_XMTQ1ODMzNzc0NA==.html?f=26612444)
