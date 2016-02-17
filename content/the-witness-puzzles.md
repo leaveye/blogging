@@ -32,6 +32,7 @@ Author: Levi G
 空心俄罗斯方块|方格内|修正所在联通区域内的某块俄罗斯方块，将之挖去空心俄罗斯方块形状的一部分。|![image](images/the-witness-puzzles_tetris2.png)
 八角星/太阳|方格内|所在联通区域必须存在且仅有一个同一颜色的特定图形（圆角方形、八角星）。|![image](images/the-witness-puzzles_sun.png)
 三通/倒置的Y|方格内|去除所在联通区域内的一个未满足的约束图形。|![image](images/the-witness-puzzles_triplet.png)
+三角|方格内|方格内有几个三角形表示在它周围，一笔画需要经过几条边。|![image](images/the-witness-puzzles_triangle.png)
 
 # 可能的隐藏线索
 
