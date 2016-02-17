@@ -1,6 +1,6 @@
 Title: 见证者游戏谜题解析
 Date: 2016-02-17 14:34
-modified: 2016-02-17 16:52
+modified: 2016-02-17 17:09
 Tags: game, puzzle, math
 Category: blogging
 Slug: the-witness-puzzles
@@ -40,6 +40,7 @@ Author: Levi G
 * 投射到题板上的阴影。阻断或引导。
 * 特定位置观察题板，题板前的景物。阻断或引导。
 * 特定位置观察题板，题板后的景物。阻断或引导。
+* 观察题板附近的特定景物，与题板图形有映射关系。
 * 环境里的特定声音信号。
 
 # 其它资源
