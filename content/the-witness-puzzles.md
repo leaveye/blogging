@@ -55,6 +55,7 @@ Author: Levi G
 
     * Galaxies（[说明](http://www.chiark.greenend.org.uk/~sgtatham/puzzles/doc/galaxies.html#galaxies)，[在线](http://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/galaxies.html)）适合练习关于对称性相关的谜题。
     * Loopy（[说明](http://www.chiark.greenend.org.uk/~sgtatham/puzzles/doc/loopy.html#loopy)，[在线](http://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/loopy.html)）适合练习关于三角形的谜题。
+
 * 关于多联骨牌：
     * [Wiki 页面](https://en.wikipedia.org/wiki/Polyomino)，中文百科目前还没有。
     * 玩数学的文科生 [Matrix67](http://www.matrix67.com/) 的[文章集](http://www.matrix67.com/blog/archives/tag/%E5%A4%9A%E8%81%94%E9%AA%A8%E7%89%8C)
