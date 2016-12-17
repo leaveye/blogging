@@ -208,44 +208,42 @@ sysfs 实际上是一个非常简单的结构。逻辑上分成目录形式。�
 
 你构造规则最直白的工具大概就是敲入 *udevinfo* 了。你需要知道的全部，就是问题设备的 sysfs 设备路径。下面是一个精简的例子（udevinfo 输出信息中，每段颜色不同，第一段绿色，第二段蓝色，第三段栗色，译者注）：
 
-```
-# udevinfo -a -p /sys/block/sda
-
-  looking at device '/block/sda':
-    KERNEL=="sda"
-    SUBSYSTEM=="block"
-    ATTR{stat}=="  128535     2246  2788977   766188    73998   317300  3132216  5735004        0   516516  6503316"
-    ATTR{size}=="234441648"
-    ATTR{removable}=="0"
-    ATTR{range}=="16"
-    ATTR{dev}=="8:0"
-
-  looking at parent device '/devices/pci0000:00/0000:00:07.0/host0/target0:0:0/0:0:0:0':
-    KERNELS=="0:0:0:0"
-    SUBSYSTEMS=="scsi"
-    DRIVERS=="sd"
-    ATTRS{ioerr_cnt}=="0x0"
-    ATTRS{iodone_cnt}=="0x31737"
-    ATTRS{iorequest_cnt}=="0x31737"
-    ATTRS{iocounterbits}=="32"
-    ATTRS{timeout}=="30"
-    ATTRS{state}=="running"
-    ATTRS{rev}=="3.42"
-    ATTRS{model}=="ST3120827AS     "
-    ATTRS{vendor}=="ATA     "
-    ATTRS{scsi_level}=="6"
-    ATTRS{type}=="0"
-    ATTRS{queue_type}=="none"
-    ATTRS{queue_depth}=="1"
-    ATTRS{device_blocked}=="0"
-
-  looking at parent device '/devices/pci0000:00/0000:00:07.0':
-    KERNELS=="0000:00:07.0"
-    SUBSYSTEMS=="pci"
-    DRIVERS=="sata_nv"
-    ATTRS{vendor}=="0x10de"
-    ATTRS{device}=="0x037f"
-```
+	# udevinfo -a -p /sys/block/sda
+	
+	  looking at device '/block/sda':
+	    KERNEL=="sda"
+	    SUBSYSTEM=="block"
+	    ATTR{stat}=="  128535     2246  2788977   766188    73998   317300  3132216  5735004        0   516516  6503316"
+	    ATTR{size}=="234441648"
+	    ATTR{removable}=="0"
+	    ATTR{range}=="16"
+	    ATTR{dev}=="8:0"
+	
+	  looking at parent device '/devices/pci0000:00/0000:00:07.0/host0/target0:0:0/0:0:0:0':
+	    KERNELS=="0:0:0:0"
+	    SUBSYSTEMS=="scsi"
+	    DRIVERS=="sd"
+	    ATTRS{ioerr_cnt}=="0x0"
+	    ATTRS{iodone_cnt}=="0x31737"
+	    ATTRS{iorequest_cnt}=="0x31737"
+	    ATTRS{iocounterbits}=="32"
+	    ATTRS{timeout}=="30"
+	    ATTRS{state}=="running"
+	    ATTRS{rev}=="3.42"
+	    ATTRS{model}=="ST3120827AS     "
+	    ATTRS{vendor}=="ATA     "
+	    ATTRS{scsi_level}=="6"
+	    ATTRS{type}=="0"
+	    ATTRS{queue_type}=="none"
+	    ATTRS{queue_depth}=="1"
+	    ATTRS{device_blocked}=="0"
+	
+	  looking at parent device '/devices/pci0000:00/0000:00:07.0':
+	    KERNELS=="0000:00:07.0"
+	    SUBSYSTEMS=="pci"
+	    DRIVERS=="sata_nv"
+	    ATTRS{vendor}=="0x10de"
+	    ATTRS{device}=="0x037f"
 
 正如你看到的，udevinfo 简单的产生一个你可以在 udev 规则中作为匹配键的属性列表。从上面例子中我可以为该设备产生下面两条规则（ATTR 绿色，SUBSYSTEMS、ATTRS 蓝色，DRIVERS 栗色，译者注）：
 
@@ -360,20 +358,18 @@ udev 为环境变量提供了一个 *ENV* 键，可用于匹配和赋值。
 
 我打开了打印机，它就被赋予了一个设备节点 */dev/lp0* 。我不太满意这样乏味的名字，打算使用 udevinfo 帮我写一个规则来提供一个替代名字：
 
-```
-# udevinfo -a -p $(udevinfo -q path -n /dev/lp0)
-  looking at device '/class/usb/lp0':
-    KERNEL=="lp0"
-    SUBSYSTEM=="usb"
-    DRIVER==""
-    ATTR{dev}=="180:0"
-
-  looking at parent device '/devices/pci0000:00/0000:00:1d.0/usb1/1-1':
-    SUBSYSTEMS=="usb"
-    ATTRS{manufacturer}=="EPSON"
-    ATTRS{product}=="USB Printer"
-    ATTRS{serial}=="L72010011070626380"
-```
+	# udevinfo -a -p $(udevinfo -q path -n /dev/lp0)
+	  looking at device '/class/usb/lp0':
+	    KERNEL=="lp0"
+	    SUBSYSTEM=="usb"
+	    DRIVER==""
+	    ATTR{dev}=="180:0"
+	
+	  looking at parent device '/devices/pci0000:00/0000:00:1d.0/usb1/1-1':
+	    SUBSYSTEMS=="usb"
+	    ATTRS{manufacturer}=="EPSON"
+	    ATTRS{product}=="USB Printer"
+	    ATTRS{serial}=="L72010011070626380"
 
 我的规则就成了：
 
@@ -389,22 +385,20 @@ USB 相机设备的一个常见复杂性在于，它们通常标识自己是一�
 
 为绕过这个，你只需要考虑下 sdb 和 sdb1 之间有什么区别。夸张地简单：只是名字不同，所以我们可在 NAME 域上使用一个简单的模式匹配。
 
-```
-# udevinfo -a -p $(udevinfo -q path -n /dev/sdb1)
-  looking at device '/block/sdb/sdb1':
-    KERNEL=="sdb1"
-    SUBSYSTEM=="block"
-
-  looking at parent device '/devices/pci0000:00/0000:00:02.1/usb1/1-1/1-1:1.0/host6/target6:0:0/6:0:0:0':
-    KERNELS=="6:0:0:0"
-    SUBSYSTEMS=="scsi"
-    DRIVERS=="sd"
-    ATTRS{rev}=="1.00"
-    ATTRS{model}=="X250,D560Z,C350Z"
-    ATTRS{vendor}=="OLYMPUS "
-    ATTRS{scsi_level}=="3"
-    ATTRS{type}=="0"
-```
+	# udevinfo -a -p $(udevinfo -q path -n /dev/sdb1)
+	  looking at device '/block/sdb/sdb1':
+	    KERNEL=="sdb1"
+	    SUBSYSTEM=="block"
+	
+	  looking at parent device '/devices/pci0000:00/0000:00:02.1/usb1/1-1/1-1:1.0/host6/target6:0:0/6:0:0:0':
+	    KERNELS=="6:0:0:0"
+	    SUBSYSTEMS=="scsi"
+	    DRIVERS=="sd"
+	    ATTRS{rev}=="1.00"
+	    ATTRS{model}=="X250,D560Z,C350Z"
+	    ATTRS{vendor}=="OLYMPUS "
+	    ATTRS{scsi_level}=="3"
+	    ATTRS{type}=="0"
 
 我的规则：
 
@@ -461,12 +455,10 @@ USB读卡器（CompactFlash，SmartMedia 等）属于 USB 存储设备的另一�
 
 在规则中简单的匹配网卡 MAC 地址是有意义的，因为它们是唯一的。但是，确信你使用的是 udevinfo 显示的*准确* MAC 地址，因为如果你没有精准匹配，你的规则不会工作。
 
-```
-# udevinfo -a -p /sys/class/net/eth0
-  looking at class device '/sys/class/net/eth0':
-    KERNEL=="eth0"
-    ATTR{address}=="00:52:8b:d5:04:48"
-```
+	# udevinfo -a -p /sys/class/net/eth0
+	  looking at class device '/sys/class/net/eth0':
+	    KERNEL=="eth0"
+	    ATTR{address}=="00:52:8b:d5:04:48"
 
 这是我的规则：
 
@@ -490,15 +482,13 @@ USB读卡器（CompactFlash，SmartMedia 等）属于 USB 存储设备的另一�
 
 如果你知道 sysfs 中的顶级设备路径，你可以使用 **udevtest** 来显示 udev 将要执行的动作。这也许可以帮你调试你的规则。例如，假设你想调试作用在 */sys/class/sound/dsp* 上的规则：
 
-```
-# udevtest /class/sound/dsp
-main: looking at device '/class/sound/dsp' from subsystem 'sound'
-udev_rules_get_name: add symlink 'dsp'
-udev_rules_get_name: rule applied, 'dsp' becomes 'sound/dsp'
-udev_device_event: device '/class/sound/dsp' already known, remove possible symlinks
-udev_node_add: creating device node '/dev/sound/dsp', major = '14', minor = '3', mode = '0660', uid = '0', gid = '18'
-udev_node_add: creating symlink '/dev/dsp' to 'sound/dsp'
-```
+	# udevtest /class/sound/dsp
+	main: looking at device '/class/sound/dsp' from subsystem 'sound'
+	udev_rules_get_name: add symlink 'dsp'
+	udev_rules_get_name: rule applied, 'dsp' becomes 'sound/dsp'
+	udev_device_event: device '/class/sound/dsp' already known, remove possible symlinks
+	udev_node_add: creating device node '/dev/sound/dsp', major = '14', minor = '3', mode = '0660', uid = '0', gid = '18'
+	udev_node_add: creating symlink '/dev/dsp' to 'sound/dsp'
 
 注意 */sys* 前缀在 udevtest 命令行中被删除了，这是因为 udevtest 在设备路径上操作。还要留意的是 udevtest 是一个纯粹的测试/调试工具，无论输出怎么建议，它不创建任何设备节点。
 

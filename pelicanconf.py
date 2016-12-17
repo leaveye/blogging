@@ -6,6 +6,12 @@ AUTHOR = u'Levi G.'
 SITENAME = u'Happy Coding'
 SITEURL = ''
 
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['extract_toc']
+
+#MD_EXTENSIONS = ['toc(permalink=true)']
+MD_EXTENSIONS = (['toc'])
+
 # ERR
 """
 THEME = "pelican-themes/backdrop"
