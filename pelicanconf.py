@@ -62,11 +62,12 @@ THEME = "pelican-themes/sundown" # 只需加公式，改中文，调表格 X 没
 THEME = "pelican-themes/svbhack" # 整齐干净。只需加公式，改中文，加表格，加头像
 THEME = "pelican-themes/svbtle" # 只需加公式，改中文，加表格
 THEME = "pelican-themes/zurb-F5-basic" # 只需加公式，改中文，调表格
-"""
+
 THEME = "pelican-themes/decode-pelican"
 THEME = "pelican-themes/guoguo"
 THEME = "pelican-themes/pelican-cait" # 简洁漂亮。只需加公式，改中文，加表格 X 没有外链
 THEME = "pelican-themes/zurb-F5-basic" # 只需加公式，改中文，调表格
+"""
 THEME = "pelican-themes/foundation-default-colours" # 只需改中文，调大小
 
 PATH = 'content'
