@@ -2,9 +2,10 @@ Title: 升级 OS X El Capitan
 Date: 2015-10-03 14:27:31
 Edited: 2015-10-03 14:28:01
 Tags: os x, el capitan, kernel_task, sip
-Category: system
+Category: macOS
 Slug: upgrade-to-el-capitan
 Author: Levi G
+Status: published
 
 10 月 1 日发现 Apple 推送了 El Capitan 的更新。第一时间点击升级，准备体验一下。
 

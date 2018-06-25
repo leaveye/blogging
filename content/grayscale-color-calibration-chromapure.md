@@ -1,4 +1,10 @@
 title: 【译】小白也能用 ChromaPure 做灰阶与颜色校准
+Date: 2018-4-17 02:19
+Tags: video, calibration, projector, home theater
+Category: 家庭影院
+Slug: calibration-by-chromapure
+Author: Levi G
+Status: published
 
 原文：[CHROMAPURE GRAYSCALE & COLOR CALIBRATION FOR DUMMIES](http://www.curtpalme.com/forum/viewtopic.php?t=35322)
 参考了[旧版本](http://www.curtpalme.com/forum/viewtopic.php?t=10457)的[翻译](http://www.isf.com.tw/tech_article/kal_guide.html)。
@@ -834,8 +840,8 @@ ChromaPure 的许多模块中都可以生成快速报告（Quick Reports）。�
 干杯
 
 Kal
-[CurtPalme.com 家庭影院](http://www.curtpalme.com/)编辑
-[TheElectricBrewery.com](http://www.theelectricbrewery.com/)创始人 …一步步做个自己的酿酒厂。
+- [CurtPalme.com 家庭影院](http://www.curtpalme.com/) 编辑
+- [TheElectricBrewery.com](http://www.theelectricbrewery.com/) 创始人 …一步步做个自己的酿酒厂。
 
-我最新的著作是一步一步做个自己的酿酒厂。现开放电子书下载：
+我最新的著作是一步步做个自己的酿酒厂。现开放电子书下载：
 [![](http://www.theelectricbrewery.com/images/728x90/guide.jpg)](http://www.theelectricbrewery.com/the-complete-guide-to-building-your-brewery)

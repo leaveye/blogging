@@ -1,9 +1,10 @@
 Title: 打造 vagrant boxes 托管服务器
 Date: 2017-01-04 11:57:02
 Tags: devops, vagrant, virtualbox
-Category: server
+Category: 服务器
 Slug: self-host-vagrant-boxes
 Author: Levi G
+Status: published
 
 参考：
 

@@ -1,9 +1,10 @@
-Title: 从头到尾做 Vagrant Box
+Title: 【译】从头制作 Vagrant Box
 Date: 2016-12-19 14:21
 Tags: vagrant, virtualization, server
-Category: Server
+Category: 服务器
 Slug: building-a-vagrant-box
 Author: Levi G
+Status: published
 
 译自：[https://blog.engineyard.com/2014/building-a-vagrant-box](https://blog.engineyard.com/2014/building-a-vagrant-box)  
 ![Original LOGO](https://blog.engineyard.com/images/blog-images/vagrant-box.png)
@@ -46,7 +47,7 @@ package.box 文件是什么？使用 VirtualBox 做 provider 时，它是个包�
 
 注意：这些内容在其它 provider（如 VMWare ）下是不同的。参考 vagrant 关于 [box 的文档](http://docs.vagrantup.com/v2/vmware/boxes.html)查找更多信息。
 
-## 大叫一声
+## 大力声明
 
 我是个 Vagrant 粉，也喜欢自动化所有的事，它们让我的生活轻松很多。首先要表明我主要取材于：
 

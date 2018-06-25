@@ -1,6 +1,3 @@
-[submodule "pelican-themes"]
-	path = pelican-themes
-	url = https://github.com/leaveye/pelican-themes
 [submodule "output"]
 	path = output
 	url = https://github.com/leaveye/leaveye.github.io

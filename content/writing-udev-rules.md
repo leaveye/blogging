@@ -5,6 +5,7 @@ Tags: linux, udev, rules
 Category: Linux
 Slug: writing-udev-rules
 Author: Levi G
+Status: published
 
 by Daniel Drake (dsd)
 Version 0.74

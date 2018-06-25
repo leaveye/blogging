@@ -1,10 +1,11 @@
 Title: 迁移Blog
 Date: 2015-06-17 13:37
-Edited: 2015-06-20 16:21
+Edited: 2018-06-25 22:06
 Tags: pelican, server
-Category: blogging
+Category: 博客
 Slug: move-blog
 Author: Levi G
+Status: published
 
 之前的 blog 放在朋友的主机上，还没写上几个字呢，在换主机的过程中数据就丢失了。
 
@@ -65,6 +66,21 @@ SyntaxHighlight | 主题帮助里有
 选这个主题是因为它已经有了正确的排版并且支持了 $\LaTeX$ 。回头一点点弄的时候再换吧。
 
 ----
+
+**【2018/6/18 更新】**
+
+时隔好久，在家里老电脑的新系统里又配置了一下 pelican 环境。发现主题已经普遍更新了，大家的完成度都上升了一大截。我现在用的是 [pelican 主题][pelican-themes]中的 [hyde](https://github.com/jvanz/pelican-hyde) 。
+
+$\LaTeX$ 已经有 [pelican 插件](https://github.com/barrysteyn/pelican_plugin-render_math)支持了。
+
+----
+
+**【2018/6/25 更新】**
+
+主题颜色还是碍眼，换成 [Alchemy](https://github.com/nairobilug/pelican-alchemy) 吧。
+
+----
+
 > 待续……
 
 [pelican-themes]: https://github.com/getpelican/pelican-themes "pelican 主题包"

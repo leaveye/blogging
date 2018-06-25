@@ -2,9 +2,10 @@ Title: 见证者游戏谜题解析
 Date: 2016-02-17 14:34
 modified: 2016-02-18 12:55
 Tags: game, puzzle, math
-Category: blogging
+Category: 游戏
 Slug: the-witness-puzzles
 Author: Levi G
+Status: published
 
 ![image](images/the-witness-puzzles_maze.png)
 
@@ -58,6 +59,6 @@ Author: Levi G
 
 * 关于多联骨牌：
     * [Wiki 页面](https://en.wikipedia.org/wiki/Polyomino)，中文百科目前还没有。
-    * 玩数学的文科生 [Matrix67](http://www.matrix67.com/) 的[文章集](http://www.matrix67.com/blog/archives/tag/%E5%A4%9A%E8%81%94%E9%AA%A8%E7%89%8C)
+    * 玩数学的文科大神 [Matrix67](http://www.matrix67.com/) 的[文章集](http://www.matrix67.com/blog/archives/tag/%E5%A4%9A%E8%81%94%E9%AA%A8%E7%89%8C)
     * 果壳上的[文章集](http://www.guokr.com/search/all/?wd=%E5%A4%9A%E8%81%94%E9%AA%A8%E7%89%8C)
     * 早有立体的五阶多联骨牌玩具卖——『动脑筋的十二块』或『伤脑筋十二块』——约二十年前我自己还用牛皮纸做过一个。购买链接自寻。

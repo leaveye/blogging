@@ -1,7 +1,7 @@
 Title: Hello World !
 Date: 2015-06-15 18:11
 Tags: try, pelican, test
-Category: blogging
+Category: 博客
 Slug: just-test-pelican-again
 Author: Levi G
 Summary: 再试一下水

@@ -2,9 +2,10 @@ Title: 使用 Docker Compose 搭建本地 GitLab 服务器
 Date: 2016-08-12 10:34
 modified: 2016-08-12 14:55
 Tags: server, install, gitlab, docker
-Category: system
+Category: 服务器
 Slug: gitlab-docker-compose-install
 Author: Levi G
+Status: published
 
 # 软件安装
 

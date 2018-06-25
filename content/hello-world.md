@@ -1,7 +1,7 @@
 Title: 你好，世界
 Date: 2015-06-14 10:20
 Tags: try, pelican, test
-Category: blogging
+Category: 博客
 Slug: just-test-pelican
 Author: Levi G
 Summary: 试一下水
