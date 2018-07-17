@@ -5,6 +5,7 @@ Tags: server, install, apt
 Category: Linux
 Slug: apt-reports-typeerror
 Author: Levi G
+Status: published
 
 最近在为公司整理工作环境，部署 OMV 4 时，发现 `apt update` 指令会引发如下错误：
 
