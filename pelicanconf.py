@@ -25,6 +25,8 @@ DEFAULT_METADATA = {
     'status': 'draft',
 }
 
+EXTRA_PATH_METADATA = {'images/LG.ico': {'path': 'favicon.ico'},}
+
 # ERR
 """
 THEME = "pelican-themes/backdrop"
