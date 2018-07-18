@@ -62,10 +62,8 @@ THEME = "pelican-themes/pelipress"
 THEME = "pelican-themes/Nuja" # 只需加公式，改中文 X 没有缩略
 THEME = "pelican-themes/blue-penguin" # 只需加公式，改中文 X 没有缩略
 THEME = "pelican-themes/blueidea" # 只需加公式，改中文 X 只有一个文章
-THEME = "pelican-themes/foundation-default-colours" # 只需改中文，调大小
 THEME = "pelican-themes/fresh" # 格式不错，只需加公式，改中文，调颜色
 THEME = "pelican-themes/html5-dopetrope" # 很漂亮，结构、布局很喜欢，正文缩进格式有问题，没有公式
-THEME = "pelican-themes/martin-pelican" # 论文一样，没有链接位，用的是 googleapi X 行公式有问题
 THEME = "pelican-themes/notmyidea-cms" # 只需加公式，改中文 X 只有一个文章
 THEME = "pelican-themes/pelican-bootstrap3" # 只需加公式，改中文，加表格
 THEME = "pelican-themes/pelican-cait" # 简洁漂亮。只需加公式，改中文，加表格 X 没有外链
@@ -81,9 +79,7 @@ THEME = "pelican-themes/svbtle" # 只需加公式，改中文，加表格
 THEME = "pelican-themes/zurb-F5-basic" # 只需加公式，改中文，调表格
 
 THEME = "pelican-themes/graymill" # X 无公式，美感略差
-THEME = "pelican-themes/franticworld" # 动态，暗系，有表格 X 无公式，美感略差
 THEME = "pelican-themes/Flex"
-THEME = "pelican-themes/pelican-cait" # 简洁漂亮。只需加公式，改中文，加表格 X 没有外链
 THEME = "pelican-themes/zurb-F5-basic" # 只需加公式，改中文，调表格
 THEME = "pelican-themes/Casper2Pelican" # X 有广告
 """
@@ -96,26 +92,31 @@ THEME = "pelican-themes/voce" # X error
 THEME = "pelican-themes/uikit" # X error
 THEME = "pelican-themes/tuxlite_zf" # X error
 THEME = "pelican-themes/zurb-F5-basic" # X error
-THEME = "pelican-themes/subtle" # X error
 THEME = "pelican-themes/clean-blog" # X
-THEME = "pelican-themes/martin-pelican" # X
 
 THEME = "pelican-themes/medius" # X 移动版
 THEME = "pelican-themes/Nuja"
 THEME = "pelican-themes/elegant"
 THEME = "pelican-themes/nest"
-THEME = "pelican-themes/alchemy" #
 THEME = "pelican-themes/Flex"
-THEME = "pelican-themes/hyde"
 THEME = "pelican-bootstrap3" # err
+THEME = "pelican-cait" # lost
 THEME = "fresh" # ****
 THEME = "relapse" # ***
 THEME = "Flex" # *
 THEME = "cebong" # ****
-THEME = "subtle" # *****
+THEME = "franticworld" # ***** # 动态，暗系，有表格 X 美感略差
+THEME = "martin" # ***** X 图片代码溢出
 THEME = "foundation-default-colours" # X latex
-THEME = "franticworld" # *****
-THEME = "alchemy"
+THEME = "pelican-twitchy"
+THEME = "pelican-striped-html5up" # 精美有质感 X 语法高亮不正常
+THEME = "plumage" #
+THEME = "waterspill-en" # **** # X 图片溢出，引用过重，代码无高亮
+THEME = "twenty-html5up" # X err
+THEME = "subtle" # *****
+THEME = "sneakyidea" # ***** # X 图片溢出，代码无高亮
+THEME = "hyde" # *****
+THEME = "alchemy" # ****
 
 PATH = 'content'
 
@@ -129,6 +130,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+PROFILE_IMAGE = 'LG.png'
 
 # Blogroll
 LINKS = (('Lex Chow的博客', 'https://chou.it'),
