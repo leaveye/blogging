@@ -1,6 +1,6 @@
 Title: 迁移Blog
 Date: 2015-06-17 13:37
-Edited: 2018-06-25 22:06
+Edited: 2018-07-21 22:32
 Tags: pelican, server
 Category: 博客
 Slug: move-blog
@@ -78,6 +78,12 @@ $\LaTeX$ 已经有 [pelican 插件](https://github.com/barrysteyn/pelican_plugin
 **【2018/6/25 更新】**
 
 主题颜色还是碍眼，换成 [Alchemy](https://github.com/nairobilug/pelican-alchemy) 吧。
+
+------
+
+**【2018/7/21 更新】**
+
+突然兴起，搜索了一下 GitHub ，果然已有[别人移植的 `decode-pelican` 主题](https://github.com/voronaam/Decode-pelican)了。测试了一下，果断使用之。
 
 ----
 

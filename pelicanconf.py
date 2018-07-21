@@ -117,6 +117,7 @@ THEME = "subtle" # *****
 THEME = "sneakyidea" # ***** # X 图片溢出，代码无高亮
 THEME = "hyde" # *****
 THEME = "alchemy" # ****
+THEME = "decode-pelican" # ****
 
 PATH = 'content'
 
